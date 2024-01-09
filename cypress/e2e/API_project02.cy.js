@@ -1,19 +1,6 @@
-import { postBody, putBody, patchUpdate, patchBody } from "../fixtures/testData.json";
+import { postBody, putBody, patchUpdate, patchBody} from "../fixtures/testData.json";
 
 describe("API Project02", () => {
-  beforeEach(function () {
-    cy.fixture("testData").then((data) => {
-      this.firstName = data.postBody.firstName;
-      this.lastName = data.postBody.lastName;
-      this.email = data.postBody.email;
-      this.dob = data.postBody.dob;
-
-      this.firstNameU = data.putBody.firstName;
-      this.lastNameU = data.putBody.lastName;
-      this.emailU = data.putBody.email;
-      this.dobU = data.putBody.dob;
-    });
-  });
   let userId;
   let durTime = 500;
 
@@ -100,7 +87,7 @@ describe("API Project02", () => {
       url: `${Cypress.env("baseUrl")}/${userId}`,
     }).then((response) => {
       expect(response.status).to.equal(200);
-      expect(response.duration).to.lessThan(durTime)
+      expect(response.duration).to.lessThan(durTime);
     });
   });
 });
