@@ -1,0 +1,24 @@
+{
+    "postBody" : {
+        "firstName": "Igor",
+        "lastName": "Strelka",
+        "email": "Igor.strelka@example.net",
+        "dob": "2000-11-05"
+    },
+    "putBody" : {
+        "firstName": "IVANupdated",
+        "lastName": "BALIupdated",
+        "email": "Nettieasdaupdated7@example.net",
+        "dob": "1999-11-05"
+    },
+    "patchUpdate" : {
+        "email": "Nettieasdaupdated7@example.com",
+        "dob": "2001-11-05"
+    },
+    "patchBody" : {
+        "firstName": "IVANupdated",
+        "lastName": "BALIupdated",
+        "email": "Nettieasdaupdated7@example.com",
+        "dob": "2001-11-05"
+    }
+}
